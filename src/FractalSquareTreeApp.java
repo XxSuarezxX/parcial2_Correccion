@@ -9,7 +9,7 @@ public class FractalSquareTreeApp extends JFrame {
     public FractalSquareTreeApp() {
         super("Árbol de Cuadrados");
 
-        // Pide al usuario el número de iteraciones hasta que se ingrese un valor válido
+        
         boolean inputValid = false;
         while (!inputValid) {
             String input = JOptionPane.showInputDialog("Ingrese el número de iteraciones:");
@@ -44,7 +44,7 @@ public class FractalSquareTreeApp extends JFrame {
         int x1 = x - (int) (Math.cos(angle) * size);
         int y1 = y - (int) (Math.sin(angle) * size);
 
-        // Dibuja un cuadrado en lugar de una línea
+       
         g.drawRect(x1, y1 - size, size, size);
 
         int newSize = (int) (size / Math.sqrt(2));
